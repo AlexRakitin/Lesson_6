@@ -9,6 +9,7 @@ public class CreditCart {
         this.accountNumber = "1515-1212-1414-1616";
         this.startSum = 25;
     }
+
     public void outDataAccNumb() {
         System.out.println("Account number: " + this.accountNumber + "\n" + "Sum of beginning: " + this.startSum + " рублей ");
     }
@@ -31,20 +32,27 @@ public class CreditCart {
     }
 
 
-    public void sum(int balance) {
-        System.out.println(((balance + this.startSum)));
+    public int sum(int balance) {
+
+        this.startSum = this.startSum + balance;
+
+        return this.startSum;
     }
 
-    public void subst(int balance) {
+    public int subst(int balance) {
         if (balance <= this.startSum) {
-            System.out.println(((this.startSum - balance)));
-        }else{
+            this.startSum = this.startSum - balance;
+        } else {
             System.out.println((("Недостаточно средств!")));
         }
+        return this.startSum;
     }
 
     public void outData() {
-        System.out.println("Ваш баланс:" + startSum);
+        System.out.println("Ваш баланс:" + this.startSum);
+
     }
+
+
 }
 

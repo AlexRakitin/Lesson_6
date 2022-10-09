@@ -15,11 +15,10 @@ public class Lesson_6 {
 
         creditCart.calc(whatDoCard);
         int balance = scan.nextInt();
-        int p;
+
         switch ((whatDoCard)) {
             case 1:
                 creditCart.sum(balance);
-
                 break;
             case 2:
                 creditCart.subst(balance);
