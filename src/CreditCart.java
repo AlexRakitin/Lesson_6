@@ -31,11 +31,11 @@ public class CreditCart {
     }
 
 
-    private void sum(int balance) {
+    public void sum(int balance) {
         System.out.println(((balance + this.startSum)));
     }
 
-    private void subst(int balance) {
+    public void subst(int balance) {
         if (balance <= this.startSum) {
             System.out.println(((this.startSum - balance)));
         }else{
@@ -44,7 +44,7 @@ public class CreditCart {
     }
 
     public void outData() {
-        System.out.println("Ваш баланс:" + this.startSum);
+        System.out.println("Ваш баланс:" + startSum);
     }
 }
 
