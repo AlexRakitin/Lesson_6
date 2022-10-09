@@ -31,13 +31,13 @@ public class CreditCart {
     }
 
 
-    private void sum(int b) {
-        System.out.println(((b + this.startSum)));
+    private void sum(int balance) {
+        System.out.println(((balance + this.startSum)));
     }
 
-    private void subst(int b) {
-        if (b <= this.startSum) {
-            System.out.println(((this.startSum - b)));
+    private void subst(int balance) {
+        if (balance <= this.startSum) {
+            System.out.println(((this.startSum - balance)));
         }else{
             System.out.println((("Недостаточно средств!")));
         }

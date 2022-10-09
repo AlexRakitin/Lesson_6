@@ -14,7 +14,8 @@ public class Lesson_6 {
         int whatDoCard = scan.nextInt();
 
         creditCart.calc(whatDoCard);
-        switch (whatDoCard) {
+        int balance = scan.nextInt();
+        switch ((whatDoCard)) {
             case 1:
 
 
