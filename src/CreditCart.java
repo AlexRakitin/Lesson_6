@@ -24,7 +24,7 @@ public class CreditCart {
                 System.out.println("Сумма снять деньги: ");
                 break;
             case 3:
-                System.out.println("Ваш баланс: ");
+                System.out.println("Баланс вашей карточки: ");
                 break;
             default:
                 System.out.println("Операция выбрана не верно!");

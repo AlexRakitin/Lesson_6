@@ -14,17 +14,18 @@ public class Lesson_6 {
         int whatDoCard = scan.nextInt();
 
         creditCart.calc(whatDoCard);
-        int balance = scan.nextInt();
-
+        int balance;
         switch ((whatDoCard)) {
             case 1:
+                balance = scan.nextInt();
                 creditCart.sum(balance);
                 break;
             case 2:
+                balance = scan.nextInt();
                 creditCart.subst(balance);
                 break;
             case 3:
-                creditCart.outData();
+//                creditCart.outData();
                 break;
         }
         creditCart.outData();
